@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './ReviewSection.css';
+import Navbar from '../../src/Navbar';
+
 
 function ReviewSection({ blogId, blogTitle }) {
     // State management
@@ -102,6 +104,7 @@ function ReviewSection({ blogId, blogTitle }) {
     };
 
     return (
+
         <div className="review-section">
             <div className="review-header">
                 <h1>REVIEWS: {blogTitle}</h1>
