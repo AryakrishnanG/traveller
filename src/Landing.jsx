@@ -762,7 +762,7 @@ function Landing() {
               ))}
             </div>
 
-            {/* View All Button */}
+            {/* View All Button in page */}
             <button className="mt-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition">
             <Link to={"/blog"}>View All Blogs</Link>
             </button>
