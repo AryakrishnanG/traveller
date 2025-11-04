@@ -479,9 +479,11 @@ function Landing() {
                     <span className="text-gray-400 line-through">{pkg.oldPrice}</span>
                     <span className="text-black font-bold">{pkg.newPrice}</span>
                   </div>
-                  <button className="w-full bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-semibold py-2 rounded-md">
-                    Explore
-                  </button>
+                  <Link to={"/packageview"}>
+                    <button className="w-full bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-semibold py-2 rounded-md">
+                      Explore
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -704,7 +706,7 @@ function Landing() {
           <div className="max-w-7xl mx-auto text-center">
             {/* Section Title */}
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-10">
-              Travel <span className="text-orange-500">Blogs & Updates</span>
+              Travel <span className="text-orange-500">Reviews & Updates</span>
             </h2>
 
             {/* Blog Cards */}
@@ -764,7 +766,7 @@ function Landing() {
 
             {/* View All Button in page */}
             <button className="mt-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition">
-            <Link to={"/blog"}>View All Blogs</Link>
+            <Link to={"/blog"}>View All Reviews</Link>
             </button>
           </div>
         </section>
